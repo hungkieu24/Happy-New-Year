@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Whisper&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@
 }
 
 .header_nav a {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Dancing Script', cursive;
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
@@ -47,16 +48,31 @@
 
 .content {
     margin-top: 50px;
-    height: 100%;
-    padding: 100px 0;
-    background: var(--background-color);
+    height: 700px;
+    /* padding: 100px 0; */
+    background: linear-gradient(to right, #C70039, #900C3F, #F94C10);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.content span {
+.content .background {
+    width: 900px;
+    height: 600px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.content .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content div {
     position: absolute;
     font-family: 'Whisper', cursive;
     font-size: 80px;
@@ -64,23 +80,19 @@
     color: var(--text-color);
 }
 
-.square {
-    width: 40px;
-    height: 40px;
-    margin: 2px;
-    background: var(--background-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    transition: 2s ease;
-    border-radius: 5px;
+.content .wish{
+    transform: translateY(-30px);
 }
 
-.board {
-    width: 900px;
-    margin: 10px 0 0 10px;
-    display: flex;
-    flex-wrap: wrap ;
+.content .year {
+    transform: translateY(40px);
 }
 
-.square:hover {
-    transition: 0s;
+.content .img-item {
+    width: 200px;
+    transform: translate(-423px, 160px) rotate(-30deg);
+}
+
+.content .img-item img {
+    width: 100%;
 }
