@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: linear-gradient(to left, #900C3F, #C70039);
+    --text-color: #F8DE22;
+    --button-color: #F94C10;
+}
+
+.body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.header_nav {
+    position: relative;
+    display: flex;
+    line-height: 50px;
+}
+
+.header_nav a {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    color: var(--text-color);
+}
+
+.header_nav a::after {
+    content: "";
+    border: 1px solid #f18900;
+    margin-left: 15px;
+}
+
+.content {
+    margin-top: 50px;
+    height: 100%;
+    padding: 100px 0;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content span {
+    position: absolute;
+    font-family: 'Whisper', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 2s ease;
+    border-radius: 5px;
+}
+
+.board {
+    width: 900px;
+    margin: 10px 0 0 10px;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.square:hover {
+    transition: 0s;
+}
