@@ -24,7 +24,7 @@
     right: 0;
     background: var(--background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    z-index: 999;
 }
 .header_nav {
     position: relative;
@@ -62,7 +62,7 @@
     height: 600px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(226, 247, 0, 0.938);
 }
 
 .content .background img {
@@ -90,9 +90,62 @@
 
 .content .img-item {
     width: 200px;
-    transform: translate(-423px, 160px) rotate(-30deg);
 }
 
-.content .img-item img {
+.content .hoa img {
+    transform: translate(-460px, 180px) rotate(-50deg);
     width: 100%;
+}
+
+.content .tre img {
+    transform: translate(-423px, 160px) rotate(-10deg) scale(2);
+    width: 100%;
+}
+
+.content .vang img {
+    position: absolute;
+    transform: translate(-423px, 160px) scale(0.8);
+    width: 100%;
+    z-index: 1;
+}
+
+.content .banhChung img {
+    position: absolute;
+    transform: translate(300px, 100px) scale(1.3);
+    width: 100%;
+    z-index: 1;
+}
+
+.content .hoa2 img {
+    position: absolute;
+    transform: translate(300px, 20px) scale(2.5);
+    width: 100%;
+}
+
+.content .hoa3 img {
+    position: absolute;
+    transform: translate(200px, 20px) scale(1.5);
+    width: 100%;
+    z-index: 1;
+}
+
+.content .hoa4 img {
+    position: absolute;
+    transform: translate(-480px, -360px) scale(0.8);
+    width: 100%;
+    z-index: 1;
+}
+
+.content .chen img {
+    position: absolute;
+    transform: translate(150px, 150px) scale(2);
+    width: 100%;
+    z-index: 2;
+}
+
+.content .may img {
+    position: absolute;
+    transform: translate(-80px, 50px) scale(2);
+    width: 100%;
+    z-index: 2;
 }
