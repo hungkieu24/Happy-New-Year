@@ -36,6 +36,7 @@
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
     font-weight: bold;
+    font-size: 22px;
     margin: 0 10px;
     color: var(--text-color);
 }
@@ -63,7 +64,7 @@
     height: 600px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(226, 247, 0, 0.938);
+    box-shadow: 0 0 40px rgba(226, 247, 0, 0.938);
 }
 
 .content .background img {

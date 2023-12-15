@@ -11,13 +11,14 @@
     <div class="container">
         <div class="header">
             <div class="header_nav">
-                <a href="">Happy New Year</a>
-                <a href="">Lời Chúc</a>
-                <a href="">Lì Xì</a>
+                <a href="#content">Happy New Year</a>
+                <a href="#letter">Lời Chúc</a>
+                <a href="#slideshow">Ảnh của bạn</a>
+                <a href="#">Lì Xì</a>
             </div>
         </div>
 
-        <div class="content">
+        <div id="content" class="content">
             <div class="background"><img src="./BackGround-img/bg1.jpg" alt=""></div>
             <div class="wish">Happy New Year</div>
             <div class="year">2024</div>
@@ -33,14 +34,15 @@
             <canvas id="canvas"></canvas>
         </div>
 
-        <div class="letter">
-            <div class="letter_wrapper">
+        <div id="letter" class="letter">
+            <!-- <div class="letter_wrapper">
                 <div class="letter_avatar">
-                    <img src="./avatar-img/Monkey_D_Luffy.jpg" alt="">
+                    <img src="./avatar-img/Roronoa_Zoro.jpg" alt="">
                 </div>
                 <img class="hoa_avatar" src="./img-decorate/hoa3.png" alt="">
             <div class="letter_content">
                 <div class="dear">Chào Tuấn,</div>
+                <p></p>
                 <p>
 
                 Chúc mừng năm mới, anh bạn thân của tôi! Năm 2024 đang đến, mang theo những hạnh phúc mới, thành công mới và những kỷ niệm đáng nhớ. Mong rằng Tuấn sẽ tiếp tục chặng đường học tập với đầy đủ năng lượng và sự cố gắng, để những kiến thức mà em đang học tại Cao đẳng Cơ điện Hà Nội sẽ là bước đệm quan trọng cho tương lai sáng tạo.
@@ -57,10 +59,10 @@
                 [Tên bạn]
                 </p>
             </div>
-            </div>
+            </div> -->
         </div>
 
-        <div class="slideshow">
+        <div id="slideshow" class="slideshow">
             <div class="slideshow-container">
                 <div class="slideshow-main">
                     <img src="./img-slideshow/op_luffy.jpg" class="img_feature" alt="">
@@ -85,4 +87,5 @@
 </body>
     <script src="./events.js"></script>
     <script src="./fireWork.js"></script>
+    <script src="./script.js"></script>
 </html>
