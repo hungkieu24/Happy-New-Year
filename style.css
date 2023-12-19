@@ -218,6 +218,7 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .slideshow-container {
@@ -251,14 +252,17 @@ canvas {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 2;
 }
 
 .prev {
-    left: 10px;
+    left: 150px;
+    transform: translateY(-150px);
 }
 
 .next {
-    right: 10px;
+    right:150px;
+    transform: translateY(-150px);
 }
 
 .slideshow-list_img div{
@@ -300,6 +304,7 @@ canvas {
 .footer_box {
     width: 400px;
     height: 600px;
+    border-radius: 20px;
     background: var(--background-color);
 }
 
@@ -415,4 +420,101 @@ canvas {
 .zalo:hover .description::before {
     transition: 0.5s;
     background: #fff;
+}
+
+.liXi_qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.lixi_qr img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.lixi_name, .lixi_code{
+    color: var(--text-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.lixi_code {
+    margin-top: 10px;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+}
+
+.modal-container {
+    background: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    padding: 20px;
+}
+
+.modal-header {
+    margin-bottom: 8px;
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+}
+
+.modal-body_input {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.modal-body_input input {
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.modal-body_btn {
+    background: var(--button-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal-footer {
+    margin-top: 10px;
+}
+
+.modal-footer_note li{
+    margin: 10px 0 10px 20px;
+}
+
+.hide {
+    display: none;
 }

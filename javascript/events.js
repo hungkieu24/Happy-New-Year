@@ -2,6 +2,7 @@ var imgFeatures = document.querySelector('.img_feature');
 var listImg = document.querySelectorAll('.slideshow-list_img img');
 var prevBtn = document.querySelector('.prev');
 var nextBtn = document.querySelector('.next');
+    
 
 var currentIndex = 0;
 
@@ -40,3 +41,4 @@ nextBtn.addEventListener('click', e => {
     }
     updateImageByIndex(currentIndex);
 })
+
