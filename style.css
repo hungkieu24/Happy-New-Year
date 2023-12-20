@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Whisper&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -47,11 +48,47 @@
     margin-left: 15px;
 }
 
+.header_nav_responsive i{
+    color: var(--button-color);
+    position: absolute;
+    line-height: 50px;
+    right: 20px;
+    display: none;
+}
+
+.list-nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 10px 0 0 10px;
+    transition: 0.5s;
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.list-nav.fadeIn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.header_nav_responsive li {
+    list-style: none;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.header_nav_responsive li a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 20px;
+}
+
 .content {
     width: 100%;
     margin-top: 50px;
     height: 700px;
-    /* padding: 100px 0; */
     background: linear-gradient(to right, #fe0000, #4d2e33);
     display: flex;
     justify-content: center;
@@ -97,6 +134,7 @@
 .content .hoa img {
     transform: translate(-460px, 180px) rotate(-50deg);
     width: 100%;
+    z-index: 1;
 }
 
 .content .tre img {
@@ -108,7 +146,7 @@
     position: absolute;
     transform: translate(-423px, 160px) scale(0.8);
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .content .banhChung img {
@@ -295,6 +333,7 @@ canvas {
 .footer_wrapper {
     position: absolute;
     width: 400px;
+    max-width: calc(100% - 32px);
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -313,7 +352,6 @@ canvas {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* padding: 0 50px; */
 }
 
 .social_contact {
@@ -427,6 +465,7 @@ canvas {
     justify-content: center;
     align-items: center;
     width: 350px;
+    max-width: calc(100% - 32px);
     border-radius: 10px;
     overflow: hidden;
     margin: 20px auto;

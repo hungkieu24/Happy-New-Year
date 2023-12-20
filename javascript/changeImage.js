@@ -1,16 +1,16 @@
 var modal = document.querySelector('.modal');
 var modalContainer = document.querySelector('.modal-container');
 var modalInput = document.querySelector('.modal-body_input input');
-var modalButton = document.querySelector('.modal-body_btn');
+// var modalButton = document.querySelector('.modal-body_btn');
 
 var friendListImg = [
     {
         name: 'tuấn',
-        image1: './avatar-img/Monkey_D_Luffy.jpg',
-        image2: './avatar-img/Roronoa_Zoro.jpg',
-        image3: './avatar-img/Monkey_D_Luffy.jpg',
-        image4: './avatar-img/Monkey_D_Luffy.jpg',
-        image5: './avatar-img/Monkey_D_Luffy.jpg',
+        image1: './img-slideshow/op_luffy.jpg',
+        image2: './img-slideshow/op_luffy.jpg',
+        image3: './img-slideshow/op_luffy.jpg',
+        image4: './img-slideshow/op_luffy.jpg',
+        image5: './img-slideshow/op_luffy.jpg',
     },
     {
         name: 'kiều đình hưng',

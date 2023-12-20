@@ -2,7 +2,8 @@ var imgFeatures = document.querySelector('.img_feature');
 var listImg = document.querySelectorAll('.slideshow-list_img img');
 var prevBtn = document.querySelector('.prev');
 var nextBtn = document.querySelector('.next');
-    
+var headerNavBtn = document.querySelector('.header_nav_responsive i');
+var headerNavList = document.querySelector('.list-nav');
 
 var currentIndex = 0;
 
@@ -42,3 +43,7 @@ nextBtn.addEventListener('click', e => {
     updateImageByIndex(currentIndex);
 })
 
+headerNavBtn.addEventListener('click', e => {
+    console.log('keyboard navigation');
+    headerNavList.classList.toggle('fadeIn');
+})

@@ -1,0 +1,139 @@
+@media (max-width: 46.1875em) {
+    .header {
+        position: fixed;
+        z-index: 999;
+    }
+    
+    .header_nav {
+        display: none;
+    }
+
+    .header_nav_responsive i {
+        display: block;
+    }
+    
+    .content .wish {
+        font-size: 60px;
+    } 
+
+    .content .img-item {
+        transform: scale(0.5);
+    }
+
+    .content .tre img {
+        transform: translate(-270px, 300px) scale(1.8);
+    }
+
+    .content .chen img {
+        transform: translate(42px, 280px) scale(1.8);
+    }
+
+    .content .may img {
+        transform: translate(-86px, 117px) scale(2);
+    }
+
+    .content .banhChung img {
+        transform: translate(150px, 242px) scale(1.5);
+
+    }
+
+    .content .vang img {
+        transform: translate(-322px, 280px);
+    }
+
+    .content .hoa img {
+        transform: translate(-300px, 280px) rotate(-45deg);
+    }
+
+    .content .hoa2 img {
+        transform: translate(160px, 180px) scale(2.4);
+    }
+
+    .content .hoa3 img {
+        transform: translate(70px, 190px) scale(1.8);
+    }
+
+    .content .hoa4 img {
+        transform: translate(-400px, -480px);
+    }
+
+    .letter_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .letter_avatar {
+        transform: unset;
+    }
+
+    .hoa_avatar {
+        transform: translate(-83px, -190px) rotate(-25deg) scale(0.5);
+    }
+
+    .letter_content {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    
+    .letter_content p {
+        font-size: 15px;
+    }
+
+    .prev {
+        left: 24px;
+    }
+
+    .next {
+        right: 24px;
+    }
+
+    .slideshow-container {
+        width: 90%;
+    }
+
+
+
+}
+
+@media(max-width: 63.9375em) {
+    .content {
+        overflow: hidden;
+    }
+
+    .content .background {
+        max-height: 400px;
+       max-width: calc(100% - 32px);
+
+    }
+
+    .letter_wrapper {
+        max-width: calc(100% - 32px);
+    }
+
+    .footer_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: calc(100% - 32px);
+    }
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .content .img-item {
+        transform: scale(0.9);
+    }
+
+    .letter_content {
+        margin-left: 20px;
+    }
+    
+    .prev {
+        left: 83px;
+    }
+
+    .next {
+        right: 83px;
+    }
+
+}
