@@ -277,7 +277,6 @@ function changeLetter(nameInput) {
         <div class="letter_avatar">
             <img src="${friendLetter.image}">
         </div>
-        <img class="hoa_avatar" src="./img-decorate/hoa3.png" alt="">
         <div class="letter_content">
                 <div class="dear">Chào ${friendLetter.firstName}</div>
                 <p>${friendLetter.letters}</p>

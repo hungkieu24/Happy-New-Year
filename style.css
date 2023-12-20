@@ -222,7 +222,7 @@ canvas {
     height: 250px;
     border-radius: 10px;
     overflow: hidden;
-    transform: translateY(-250px);
+    transform: translateY(-195px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -231,14 +231,6 @@ canvas {
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-
-.hoa_avatar  {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    z-index: 1;
-    transform: translate(-380px, -140px) rotate(-25deg);
 }
 
 .letter_content {

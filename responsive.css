@@ -67,10 +67,6 @@
         transform: unset;
     }
 
-    .hoa_avatar {
-        transform: translate(-83px, -240px) rotate(-25deg) scale(0.5);
-    }
-
     .letter_content {
         margin-top: 30px;
         margin-left: 0;
