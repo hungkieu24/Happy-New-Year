@@ -327,6 +327,8 @@ canvas {
     width: 400px;
     max-width: calc(100% - 32px);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     position: relative;
     transform: translateY(80px);
@@ -337,6 +339,14 @@ canvas {
     height: 600px;
     border-radius: 20px;
     background: var(--background-color);
+}
+
+.footer_box .donate {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
 }
 
 .footer_social {
@@ -533,7 +543,7 @@ canvas {
     background: var(--button-color);
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 10px 15px;
     color: #fff;
     border-radius: 5px;
 }
