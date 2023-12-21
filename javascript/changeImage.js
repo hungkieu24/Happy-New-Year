@@ -330,7 +330,7 @@ var friendListImg = [
         image2: './img-slideshow/42/image2.jpg',
         image3: './img-slideshow/42/image3.jpg',
         image4: './img-slideshow/42/image4.jpg',
-        image5: './img-slideshow/42/image5.jpg',
+        image5: './img-slideshow/42/image5.jpeg',
     },
     {
         name: 'kiều chí trung',
