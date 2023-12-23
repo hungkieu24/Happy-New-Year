@@ -4,6 +4,8 @@ var prevBtn = document.querySelector('.prev');
 var nextBtn = document.querySelector('.next');
 var headerNavBtn = document.querySelector('.header_nav_responsive i');
 var headerNavList = document.querySelector('.list-nav');
+var modalInput = document.querySelector('.modal-body_input input');
+
 
 var currentIndex = 0;
 
@@ -46,4 +48,23 @@ nextBtn.addEventListener('click', e => {
 headerNavBtn.addEventListener('click', e => {
     console.log('keyboard navigation');
     headerNavList.classList.toggle('fadeIn');
+})
+
+const inputData = JSON.parse(localStorage.getItem('name')) || [];
+
+modalInput.addEventListener('change', e => {
+    const inputValue = e.target.value.trim().toLowerCase();
+    
+    // Kiểm tra xem người dùng đã tồn tại trong danh sách chưa
+    const userIndex = inputData.findIndex(user => user.name === inputValue);
+    
+    if(userIndex !== -1) {
+        // Người dùng đã tồn tại, cập nhật giá trị
+        inputData[userIndex] = { name: inputValue };
+    } else {
+        // Người dùng mới, thêm vào danh sách
+        inputData.push({ name: inputValue });
+    }
+
+    localStorage.setItem('name', JSON.stringify(inputData));
 })
