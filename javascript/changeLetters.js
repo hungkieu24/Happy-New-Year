@@ -4,19 +4,19 @@ var modalInput = document.querySelector('.modal-body_input input');
 var modalButton = document.querySelector('.modal-body_btn');
 
 var friendList = [
-    
+
     {
         id: 1,
         name: 'nguyễn thị phương anh',
         firstName: 'Phương Anh',
-        letters:'Chúc mừng năm mới, Phương Anh! Năm Giáp Thìn đã đến, mang theo những cơ hội mới, may mắn và thành công. Hy vọng rằng năm nay sẽ là một năm đặc biệt, đánh dấu thêm nhiều bước tiến vững chắc trong cuộc sống của cậu. Năm mới là dịp để cậu đặt ra những mục tiêu mới, nâng cao kiến thức và kỹ năng, và tận hưởng những trải nghiệm mới mẻ. Chúc cậu sẽ tiếp tục phấn đấu, không ngừng học hỏi và trở nên mạnh mẽ hơn mỗi ngày. Đồng thời, hy vọng rằng những hoạt động kinh doanh của cậu sẽ phát triển mạnh mẽ trong năm Giáp Thìn. Hãy tận dụng những cơ hội, đổi mới và không ngừng sáng tạo để đưa sản phẩm của mình đến gần hơn với khách hàng. Năm mới, hãy giữ vững niềm tin, lòng kiên trì và tâm huyết. Chính những phẩm chất này sẽ giúp cậu vượt qua mọi khó khăn và đạt được những thành công lớn lao. Chúc Cậu Phương Anh có một năm mới Giáp Thìn tràn đầy năng lượng tích cực, đầy may mắn và thành công trong mọi lĩnh vực của cuộc sống!', 
+        letters: 'Chúc mừng năm mới, Phương Anh! Năm Giáp Thìn đã đến, mang theo những cơ hội mới, may mắn và thành công. Hy vọng rằng năm nay sẽ là một năm đặc biệt, đánh dấu thêm nhiều bước tiến vững chắc trong cuộc sống của cậu. Năm mới là dịp để cậu đặt ra những mục tiêu mới, nâng cao kiến thức và kỹ năng, và tận hưởng những trải nghiệm mới mẻ. Chúc cậu sẽ tiếp tục phấn đấu, không ngừng học hỏi và trở nên mạnh mẽ hơn mỗi ngày. Đồng thời, hy vọng rằng những hoạt động kinh doanh của cậu sẽ phát triển mạnh mẽ trong năm Giáp Thìn. Hãy tận dụng những cơ hội, đổi mới và không ngừng sáng tạo để đưa sản phẩm của mình đến gần hơn với khách hàng. Năm mới, hãy giữ vững niềm tin, lòng kiên trì và tâm huyết. Chính những phẩm chất này sẽ giúp cậu vượt qua mọi khó khăn và đạt được những thành công lớn lao. Chúc Cậu Phương Anh có một năm mới Giáp Thìn tràn đầy năng lượng tích cực, đầy may mắn và thành công trong mọi lĩnh vực của cuộc sống!',
         image: './avatar-img/1.jpg'
     },
     {
         id: 2,
         name: 'phan kiều ngọc anh',
         firstName: 'Ngọc Anh',
-        letters: 'Chúc mừng năm mới, Ngọc Anh! Năm Giáp Thìn sắp đến, mang theo những cơ hội mới và may mắn không ngờ. Hy vọng rằng năm nay sẽ là một chương mới đầy ý nghĩa và thành công trong cuộc sống của cậu. Cùng nhau, chúng ta đã trải qua nhiều kỷ niệm đáng nhớ từ cấp 2 đến cấp 3. Mong rằng mối quan hệ của chúng ta sẽ tiếp tục phát triển và là nguồn động viên, hỗ trợ lẫn nhau trong những thách thức mới. Năm mới là dịp để cậu đặt ra những mục tiêu mới, định hình cho tương lai và phát triển những kỹ năng mới. Chúc cậu sẽ có một năm Giáp Thìn tràn đầy năng lượng tích cực, thành công rực rỡ và những bước tiến vững chắc trên con đường học tập và phát triển bản thân. Năm Giáp Thìn, hãy mở rộng tầm nhìn, tận hưởng những trải nghiệm mới, và đặt ra những thách thức để bản thân ngày một hoàn thiện hơn. Chúc cậu sẽ gặt hái được nhiều thành công mới, và niềm vui sẽ luôn bên cậu trong mọi bước đi. Chúc mừng năm mới, Ngọc Anh!', 
+        letters: 'Chúc mừng năm mới, Ngọc Anh! Năm Giáp Thìn sắp đến, mang theo những cơ hội mới và may mắn không ngờ. Hy vọng rằng năm nay sẽ là một chương mới đầy ý nghĩa và thành công trong cuộc sống của cậu. Cùng nhau, chúng ta đã trải qua nhiều kỷ niệm đáng nhớ từ cấp 2 đến cấp 3. Mong rằng mối quan hệ của chúng ta sẽ tiếp tục phát triển và là nguồn động viên, hỗ trợ lẫn nhau trong những thách thức mới. Năm mới là dịp để cậu đặt ra những mục tiêu mới, định hình cho tương lai và phát triển những kỹ năng mới. Chúc cậu sẽ có một năm Giáp Thìn tràn đầy năng lượng tích cực, thành công rực rỡ và những bước tiến vững chắc trên con đường học tập và phát triển bản thân. Năm Giáp Thìn, hãy mở rộng tầm nhìn, tận hưởng những trải nghiệm mới, và đặt ra những thách thức để bản thân ngày một hoàn thiện hơn. Chúc cậu sẽ gặt hái được nhiều thành công mới, và niềm vui sẽ luôn bên cậu trong mọi bước đi. Chúc mừng năm mới, Ngọc Anh!',
         image: './avatar-img/2.jpg'
     },
     {
@@ -242,7 +242,7 @@ var friendList = [
         id: 34,
         name: 'nguyễn quang thoại',
         firstName: 'Thoại',
-        letters: 'Chúc mừng năm mới, người anh em! Nhân dịp năm mới Giáp Thìn 2024, thằng này muốn gửi đến Thoại những lời chúc tốt đẹp nhất. Tết đến, hy vọng người anh em sẽ được bao quanh bởi niềm vui và tình thân thương. Năm 2023 đã trôi qua nhanh chóng, và thằng này biết người anh em đã trải qua những thách thức và bài học trong cuộc sống. Việc học được từ những trải nghiệm cá nhân, như trận tài xỉu kia, thực sự là những bước tiến quan trọng. Hy vọng rằng những bài học đó sẽ giúp người anh em trưởng thành và thêm sự khôn ngoan trong những quyết định tương lai. Với vẻ ngoại hình điển trai và sự quyến rũ tự nhiên, người anh em hẳn là một tâm điểm thu hút đối với nhiều người. Thoại không chỉ nổi bật về mặt ngoại hình mà còn về tâm hồn đẹp, điều này làm cho người anh em trở thành một người bạn thân thiết và đáng quý. Chúc mừng người anh em đang theo đuổi ngành kỹ thuật phần mềm tại trường Đại học FPT, chính là nơi chúng ta cùng học tập và trải qua những thách thức khó khăn nhưng cũng đầy ý nghĩa. Hy vọng rằng kiến thức người anh em đang học sẽ là nguồn động viên lớn cho sự phát triển của người anh em trong tương lai. Dù có nhiều người yêu quanh người anh em , nhưng thằng này tin rằng với trái tim ấm áp và tâm hồn đẹp, Thoại sẽ tìm thấy hạnh phúc thực sự. Mong rằng, năm mới sẽ mang lại cho người anh em nhiều cơ hội mới, niềm vui và thành công trong cả sự nghiệp và tình cảm. Cuối cùng, chúc Thoại có một Tết truyền thống ấm áp và ý nghĩa bên gia đình và bạn bè. Mong rằng năm mới sẽ là một chặng đường đầy may mắn và thành công. Chúc Thoại có một năm mới tràn đầy năng lượng tích cực và hạnh phúc!',
+        letters: 'Chúc mừng năm mới, người anh em! Nhân dịp năm mới Giáp Thìn 2024, thằng Hưng này muốn gửi đến Thoại những lời chúc ấm áp nhất. Tết đến, hy vọng người anh em sẽ được bao quanh bởi niềm vui và tình thân thương. Năm mới đã đến, và Hưng muốn chia sẻ những lời chúc tốt đẹp nhất với người anh em.Cùng nhau, chúng ta đã trải qua nhiều điều trong suốt thời gian qua, cả những trải nghiệm vui vẻ và những thách thức khó khăn.Đầu năm 2024, chúng ta có một trải nghiệm khá đặc biệt khi tham gia vào một ứng dụng đầu tư. Tôi rất tiếc về việc mất tiền trong ứng dụng đó, nhưng thật tuyệt vời khi chúng ta đã vượt qua khó khăn và tìm ra giải pháp.Tôi biết rằng tôi đã mất một khoảng thời gian dài làm lụng để trả đủ số tiền cho người anh em, nhưng hạnh phúc lớn nhất là khi cuối cùng chúng ta đã có thể vượt qua tình huống khó khăn đó. Dù có những rủi ro trong đầu tư, nhưng điều quan trọng là chúng ta đã học được từ những trải nghiệm đó.Hy vọng rằng những bài học này sẽ giúp chúng ta trở nên thông thái hơn trong các quyết định tài chính trong tương lai. Năm mới là dịp để bắt đầu lại, và tôi tin rằng với sự mạnh mẽ và sự đoàn kết của chúng ta, mọi khó khăn sẽ trở thành bước đệm cho những thành công lớn hơn. Cuối cùng, chúc Thoại có một Tết ấm áp và ý nghĩa bên gia đình và bạn bè.Mong rằng năm mới sẽ là một chặng đường đầy may mắn và thành công.',
         image: './avatar-img/34.jpg'
     },
     {
@@ -326,7 +326,7 @@ var friendList = [
         id: 46,
         name: 'nguyễn thị hồng vân',
         firstName: 'Vân',
-        letters: 'Chúc mừng sinh nhật, cô gái xinh đẹp! Dù là muộn nhưng chắc chắn tôi không muốn bỏ lỡ cơ hội gửi đến bạn những lời chúc tốt đẹp nhất trong dịp tết đặc biệt này. Chúc mừng sinh nhật (09/02/2004 - 09/02/2024) và chúc mừng năm mới Giáp Thìn! Chắc hẳn bạn sẽ có một sinh nhật truyền thống đặc biệt khi nó trùng với thời khắc chuyển giao giữa năm cũ và năm mới, đúng vào ngày 30 Tết. Năm 2023 đã là một năm đầy thách thức với bạn, nhưng mình biết bạn đã vượt qua tất cả những khó khăn đó với sự mạnh mẽ và quyết tâm. Việc bạn chọn học nghề phun xăm thẩm mỹ thay vì học đại học có lẽ là một quyết định mạo hiểm, nhưng tôi tin rằng đó chắc chắn là bước ngoặt quan trọng trong sự nghiệp của bạn. Chúc mừng bạn vì đã có sự đổi mới trong lựa chọn nghề nghiệp, và hy vọng rằng năm mới sẽ mang lại cho bạn nhiều cơ hội mới, thành công và hạnh phúc. Dù bạn chơi Liên Quân và coi tựa game này như một người bạn thân, nhưng tôi tin chắc rằng đam mê này sẽ tiếp tục làm đầy màu sắc cuộc sống của bạn. Còn về việc săn sale trên các nền tảng online, liệu có giảm bớt được đôi chút không? Nhưng thôi, ai mà cản trở được đam mê shopping của bạn, đúng không? Đôi khi, những chiếc hộp đến từ người giao hàng trở thành một loại niềm vui đặc biệt trong cuộc sống hàng ngày. Dịp Tết này, dù bạn không ở quê như thường lệ mà lại lên nhà bố ở Hà Nội, hy vọng bạn sẽ trải qua những ngày Tết ấm cúng và ý nghĩa bên người thân. Mong rằng, mọi khó chịu và phiền muộn sẽ trôi qua nhanh chóng, để bạn có thể tận hưởng những khoảnh khắc vui vẻ và ấm áp. Cuối cùng, chúc mừng sinh nhật lần nữa, Vân! Mong rằng năm mới sẽ mang đến cho bạn nhiều niềm vui mới, cũng như những bí mật và điều bất ngờ tốt lành. Tôi hy vọng bạn sẽ luôn giữ vững niềm tin và sự lạc quan, như cái tên của mình vậy. Chúc Vân có một năm mới tràn đầy sức khỏe, thành công và hạnh phúc. Sinh nhật vui vẻ và chúc mừng năm mới!',
+        letters: 'Chúc mừng sinh nhật, cô gái xinh đẹp! Dù là muộn nhưng chắc chắn tớ không muốn bỏ lỡ cơ hội gửi đến Vân những lời chúc tốt đẹp nhất trong dịp tết đặc biệt này. Chúc mừng sinh nhật (09/02/2004 - 09/02/2024) và chúc mừng năm mới Giáp Thìn! Chắc hẳn Vân sẽ có một sinh nhật đặc biệt khi nó trùng với thời khắc chuyển giao giữa năm cũ và năm mới, đúng vào ngày 30 Tết. Năm 2023 đã là một năm đầy thách thức với Vân, nhưng mình biết Vân đã vượt qua tất cả những khó khăn đó với sự mạnh mẽ và quyết tâm. Việc Vân chọn học nghề thay vì học đại học có lẽ là một quyết định mạo hiểm, nhưng tớ tin rằng đó chắc chắn là bước ngoặt quan trọng trong sự nghiệp của Vân. Chúc mừng Vân vì đã có sự đổi mới trong lựa chọn nghề nghiệp, và hy vọng rằng năm mới sẽ mang lại cho Vân nhiều cơ hội mới, thành công và hạnh phúc. Dù Vân chơi Liên Quân và coi tựa game này như một người Vân thân, nhưng tớ tin chắc rằng đam mê này sẽ tiếp tục làm đầy màu sắc cuộc sống của Vân. Còn về việc săn sale trên các nền tảng online, liệu có giảm bớt được đôi chút không? Nhưng thôi, ai mà cản trở được đam mê shopping của Vân, đúng không? Đôi khi, những chiếc hộp đến từ người giao hàng trở thành một loại niềm vui đặc biệt trong cuộc sống hàng ngày. Dịp Tết này, dù bạn không ở quê như thường lệ mà lại lên nhà bố ở Hà Nội, hy vọng bạn sẽ trải qua những ngày Tết ấm cúng và ý nghĩa bên người thân. Mong rằng, mọi khó chịu và phiền muộn sẽ trôi qua nhanh chóng, để Vân có thể tận hưởng những khoảnh khắc vui vẻ và ấm áp. Cuối cùng, chúc mừng sinh nhật lần nữa, Vân! Mong rằng năm mới sẽ mang đến cho Vân nhiều niềm vui mới, cũng như những bí mật và điều bất ngờ tốt lành. tớ hy vọng Vân sẽ luôn giữ vững niềm tin và sự lạc quan, như cái tên của mình vậy. Chúc Vân có một năm mới tràn đầy sức khỏe, thành công và hạnh phúc. Sinh nhật vui vẻ và chúc mừng năm mới!',
         image: './avatar-img/46.jpg'
     },
     {
@@ -350,22 +350,22 @@ var friendList = [
         letters: 'Nhân dịp năm mới Giáp Thìn 2024, em xin gửi đến cô những lời chúc tốt đẹp nhất. Trong những năm tháng cấp 3, sự hiện diện của cô không chỉ là người hướng dẫn mà còn là nguồn động viên vô cùng lớn lao cho chúng em. Cô là một người giáo viên tuyệt vời, luôn tràn đầy nhiệt huyết và sự say mê với nghề giảng dạy. Bằng cách dạy bài không chỉ có kiến thức mà còn chứa đựng những giá trị lớn lao về tình cảm, tầm nhìn, và lòng trách nhiệm. Em đã học được rất nhiều từ cách cô giảng dạy và tận tâm của mình. Cô đã tạo nên không khí học tập tích cực trong lớp, giúp chúng em không chỉ nắm vững kiến thức mà còn phát triển kỹ năng sống. Em cảm ơn cô vì những bài học thú vị, những buổi thảo luận sôi nổi, và những dự án mà cô đã giúp chúng em thực hiện. Năm mới, em chúc cô có một năm tràn đầy sức khỏe, niềm vui và thành công trong sự nghiệp giảng dạy. Mong rằng những nỗ lực và lòng đam mê của cô sẽ tiếp tục được đền đáp xứng đáng. Chúc cô một cái Tết ấm áp, tràn ngập niềm hạnh phúc bên gia đình và những người yêu thương. Hy vọng rằng mỗi nét chữ trong lời chúc này đều có thể thấu hiểu được lòng biết ơn và sự kính trọng của chúng em dành cho cô. Một lần nữa, chúc cô Thanh Minh có một năm mới đầy may mắn, hạnh phúc và thành công.',
         image: './avatar-img/0.jpg'
     },
-   
-    
-    
-];  
 
-var letter = document.querySelector('.letter')    
+
+
+];
+
+var letter = document.querySelector('.letter')
 
 function changeLetter(nameInput) {
-    var friendLetter = friendList.find(function(letter) { 
+    var friendLetter = friendList.find(function (letter) {
         return letter.name == nameInput
     })
-    
+
     var newWrapper = document.createElement('div')
     newWrapper.classList.add('letter_wrapper')
-    newWrapper.innerHTML = 
-    `
+    newWrapper.innerHTML =
+        `
         <div class="letter_avatar">
             <img src="${friendLetter.image}">
         </div>
@@ -378,19 +378,19 @@ function changeLetter(nameInput) {
     letter.appendChild(newWrapper)
 }
 function getFriendNameToChange() {
-    modalInput.addEventListener('change', function(e) {
-        var nameFriend = modalInput.value.trim().toLowerCase(); 
+    modalInput.addEventListener('change', function (e) {
+        var nameFriend = modalInput.value.trim().toLowerCase();
         changeLetter(nameFriend)
     })
-    
+
 }
 getFriendNameToChange()
 
-modalButton.addEventListener('click', function(e) {
+modalButton.addEventListener('click', function (e) {
     modal.classList.add('hide');
-})  
+})
 
-modalButton.addEventListener('keycode', function(e) {
+modalButton.addEventListener('keycode', function (e) {
     if (e.keyCode == 13) {
         modal.classList.add('hide');
     }

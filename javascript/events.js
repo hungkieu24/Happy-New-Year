@@ -11,7 +11,7 @@ var currentIndex = 0;
 
 function updateImageByIndex(index) {
 
-    document.querySelectorAll('.slideshow-list_img div').forEach(function(item) {
+    document.querySelectorAll('.slideshow-list_img div').forEach(function (item) {
         item.classList.remove('active');
     });
 
@@ -21,7 +21,7 @@ function updateImageByIndex(index) {
     listImg[index].parentElement.classList.add('active');
 }
 
-listImg.forEach( (img, index) => {
+listImg.forEach((img, index) => {
     img.addEventListener('click', e => {
         updateImageByIndex(index);
     })
@@ -38,7 +38,7 @@ prevBtn.addEventListener('click', e => {
 
 nextBtn.addEventListener('click', e => {
     if (currentIndex == listImg.length - 1) {
-        currentIndex = 0 ;
+        currentIndex = 0;
     } else {
         currentIndex++;
     }
@@ -54,11 +54,11 @@ const inputData = JSON.parse(localStorage.getItem('name')) || [];
 
 modalInput.addEventListener('change', e => {
     const inputValue = e.target.value.trim().toLowerCase();
-    
+
     // Kiểm tra xem người dùng đã tồn tại trong danh sách chưa
     const userIndex = inputData.findIndex(user => user.name === inputValue);
-    
-    if(userIndex !== -1) {
+
+    if (userIndex !== -1) {
         // Người dùng đã tồn tại, cập nhật giá trị
         inputData[userIndex] = { name: inputValue };
     } else {
@@ -68,3 +68,12 @@ modalInput.addEventListener('change', e => {
 
     localStorage.setItem('name', JSON.stringify(inputData));
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Lấy thẻ audio
+    var audio = document.getElementById("backgroundMusic");
+
+    // Tự động phát nhạc khi trang web được tải
+    audio.play();
+});
+
