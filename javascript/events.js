@@ -69,8 +69,9 @@ modalInput.addEventListener('change', e => {
     localStorage.setItem('name', JSON.stringify(inputData));
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () {
     // Tự động phát nhạc khi trang web được tải
     audio.play();
 });
+
 
