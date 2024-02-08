@@ -5,7 +5,7 @@ var nextBtn = document.querySelector('.next');
 var headerNavBtn = document.querySelector('.header_nav_responsive i');
 var headerNavList = document.querySelector('.list-nav');
 var modalInput = document.querySelector('.modal-body_input input');
-
+var audio = document.querySelector("#backgroundMusic");
 
 var currentIndex = 0;
 
@@ -70,9 +70,6 @@ modalInput.addEventListener('change', e => {
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Lấy thẻ audio
-    var audio = document.getElementById("backgroundMusic");
-
     // Tự động phát nhạc khi trang web được tải
     audio.play();
 });
