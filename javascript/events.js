@@ -49,8 +49,9 @@ headerNavBtn.addEventListener('click', e => {
     console.log('keyboard navigation');
     headerNavList.classList.toggle('fadeIn');
 })
-
-const inputData = JSON.parse(localStorage.getItem('name')) || [];
+var time = new Date();
+var currentTime = time.toLocaleString();
+const inputData = JSON.parse(localStorage.getItem(currentTime)) || [];
 
 modalInput.addEventListener('change', e => {
     const inputValue = e.target.value.trim().toLowerCase();
@@ -66,7 +67,7 @@ modalInput.addEventListener('change', e => {
         inputData.push({ name: inputValue });
     }
 
-    localStorage.setItem('name', JSON.stringify(inputData));
+    localStorage.setItem(currentTime, JSON.stringify(inputData));
 })
 
 window.addEventListener("DOMContentLoaded", function () {

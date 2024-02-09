@@ -14,7 +14,7 @@
 }
 
 .body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -27,6 +27,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     z-index: 999;
 }
+
 .header_nav {
     position: relative;
     display: flex;
@@ -48,7 +49,7 @@
     margin-left: 15px;
 }
 
-.header_nav_responsive i{
+.header_nav_responsive i {
     color: var(--button-color);
     position: absolute;
     line-height: 50px;
@@ -119,7 +120,7 @@
     color: var(--text-color);
 }
 
-.content .wish{
+.content .wish {
     transform: translateY(-30px);
 }
 
@@ -192,8 +193,8 @@
 
 canvas {
     position: absolute;
-	cursor: crosshair;
-	display: block;
+    cursor: crosshair;
+    display: block;
     z-index: 3;
 }
 
@@ -238,7 +239,7 @@ canvas {
     line-height: 1.4;
     font-size: 25px;
     text-align: justify;
-    color: #e1d5d5  ;
+    color: #e1d5d5;
 }
 
 .slideshow {
@@ -255,6 +256,7 @@ canvas {
     width: 80%;
     height: 80%;
 }
+
 .slideshow-main {
     height: 70%;
     margin-bottom: 20px;
@@ -291,11 +293,11 @@ canvas {
 }
 
 .next {
-    right:150px;
+    right: 150px;
     transform: translateY(-150px);
 }
 
-.slideshow-list_img div{
+.slideshow-list_img div {
     padding: 5px;
     cursor: pointer;
 }
@@ -398,12 +400,12 @@ canvas {
 }
 
 .icon .description::before {
-    content:"";
+    content: "";
     display: flex;
     width: 20px;
     height: 20px;
     bottom: 0;
-    left: 50%; 
+    left: 50%;
     position: absolute;
     transform: translate(-50%, 45%) rotate(45deg);
 }
@@ -473,12 +475,13 @@ canvas {
     margin: 20px auto;
 }
 
-.lixi_qr img{
+.lixi_qr img {
     border-radius: 10px;
     width: 100%;
 }
 
-.lixi_name, .lixi_code{
+.lixi_name,
+.lixi_code {
     color: var(--text-color);
     font-size: 25px;
     display: flex;
@@ -552,7 +555,7 @@ canvas {
     margin-top: 10px;
 }
 
-.modal-footer_note li{
+.modal-footer_note li {
     margin: 10px 0 10px 20px;
 }
 

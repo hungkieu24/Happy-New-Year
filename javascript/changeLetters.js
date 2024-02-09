@@ -116,7 +116,7 @@ var friendList = [
         id: 16,
         name: 'kiều đình hưng',
         firstName: 'Hưng',
-        letters: 'Năm mới vui vẻ.....(mời ai đó điền vào chỗ trống - có thể điền bằng cách trao lì xì qua qr)',
+        letters: 'Năm mới vui vẻ.....(mời ai đó điền vào chỗ trống bằng cách liên hệ với tôi - có thể điền bằng cách trao lì xì qua QR code phía dưới)',
         image: './avatar-img/16.jpg'
     },
     {
