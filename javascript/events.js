@@ -5,6 +5,7 @@ var nextBtn = document.querySelector('.next');
 var headerNavBtn = document.querySelector('.header_nav_responsive i');
 var headerNavList = document.querySelector('.list-nav');
 var modalInput = document.querySelector('.modal-body_input input');
+var modalBtn = document.querySelector('.modal-body_btn');
 var audio = document.querySelector("#backgroundMusic");
 
 var currentIndex = 0;
@@ -70,9 +71,6 @@ modalInput.addEventListener('change', e => {
     localStorage.setItem(currentTime, JSON.stringify(inputData));
 })
 
-window.addEventListener("DOMContentLoaded", function () {
-    // Tự động phát nhạc khi trang web được tải
-    audio.play();
-});
+modalBtn.addEventListener('click', () => audio.play());
 
 
