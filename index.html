@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./logo/logo1.jpg" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./responsive.css" />
+        <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+        <title>Happy New Year</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./logo/logo1.jpg">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
-    <title>Happy New Year</title>
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="header">
-            <div class="header_nav">
-                <a href="#content">Happy New Year</a>
-                <a href="#letter">Lời Chúc</a>
-                <a href="#slideshow">Ảnh của bạn</a>
-                <a href="#lixi">Lì Xì</a>
-            </div>
-
-            <div class="header_nav_responsive">
-                <i class="fa-solid fa-bars"></i>
-                <ul class="list-nav">
-                    <li><a href="#content">Happy New Year</a></li>
-                    <li><a href="#letter">Lời Chúc</a></li>
-                    <li><a href="#slideshow">Ảnh của bạn</a></li>
-                    <li><a href="#lixi">Lì Xì</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="modal">
-            <div class="modal-container">
-                <div class="modal-header">
-                    Nhập tên của bạn:
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header_nav">
+                    <a href="#content">Happy New Year</a>
+                    <a href="#letter">Lời Chúc</a>
+                    <a href="#slideshow">Ảnh của bạn</a>
+                    <a href="#lixi">Lì Xì</a>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-body_input">
-                        <input type="text" required>
+
+                <div class="header_nav_responsive">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="list-nav">
+                        <li><a href="#content">Happy New Year</a></li>
+                        <li><a href="#letter">Lời Chúc</a></li>
+                        <li><a href="#slideshow">Ảnh của bạn</a></li>
+                        <li><a href="#lixi">Lì Xì</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal">
+                <div class="modal-container">
+                    <label class="modal-header" for="modal-body_input">Nhập tên của bạn:</label>
+                    <div class="modal-body">
+                        <div class="modal-body_input" >
+                            <input id="modal-body_input" type="text" required />
+                        </div>
+                        <button class="modal-body_btn">Gửi</button>
                     </div>
-                    <button class="modal-body_btn">Gửi</button>
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-footer_note">
-                        Lưu ý:
-                        <ul>
-                            <li>Nhập cả họ và tên</li>
-                            <li>Nhập tên theo giấy khai sinh</li>
-                            <li>Không nhập ký tự đặc biệt</li>
-                        </ul>
+                    <div class="modal-footer">
+                        <div class="modal-footer_note">
+                            Lưu ý:
+                            <ul>
+                                <li>Nhập cả họ và tên</li>
+                                <li>Nhập tên theo giấy khai sinh</li>
+                                <li>Không nhập ký tự đặc biệt</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div id="content" class="content">
-            <div class="background">
-                <img src="./BackGround-img/bg1.jpg" alt="">
-            </div>
-            <div class="wish">Happy New Year</div>
-            <div class="year">2024</div>
-            <div class="img-item may"><img src="./img-decorate/may.png" alt=""></div>
-            <div class="img-item tre"><img src="./img-decorate/tre.png" alt=""></div>
-            <div class="img-item hoa"><img src="./img-decorate/hoa.png" alt=""></div>
-            <div class="img-item hoa2"><img src="./img-decorate/hoa2.png" alt=""></div>
-            <div class="img-item hoa3"><img src="./img-decorate/hoa3.png" alt=""></div>
-            <div class="img-item hoa4"><img src="./img-decorate/hoa3.png" alt=""></div>
-            <div class="img-item banhChung"><img src="./img-decorate/banhChung.png" alt=""></div>
-            <div class="img-item chen"><img src="./img-decorate/chen.png" alt=""></div>
-            <div class="img-item vang"><img src="./img-decorate/vang.png" alt=""></div>
-            <canvas id="canvas"></canvas>
-        </div>
-
-        <div id="letter" class="letter">
-        </div>
-
-        <div id="slideshow" class="slideshow">
-            <div class="control prev">
-                <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="control next">
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="slideshow-container">
-                <div class="slideshow-main">
-                    <img src="./BackGround-img/background5.jpg" class="img_feature" alt="">
+            <div id="content" class="content">
+                <div class="background">
+                    <img src="./BackGround-img/bg1.jpg" alt="" />
                 </div>
-
-                <div class="slideshow-list_img">
-                    <div class="image_index1 active"><img src="./img-decorate/slideImage.jpg" alt=""></div>
-                    <div class="image_index2"><img src="./img-decorate/slideImage.jpg" alt=""></div>
-                    <div class="image_index3"><img src="./img-decorate/slideImage.jpg" alt=""></div>
-                    <div class="image_index4"><img src="./img-decorate/slideImage.jpg" alt=""></div>
-                    <div class="image_index5"><img src="./img-decorate/slideImage.jpg" alt=""></div>
-                </div>
+                <div class="wish">Happy New Year</div>
+                <div class="year">2025</div>
+                <div class="img-item may"><img src="./img-decorate/may.png" alt="" /></div>
+                <div class="img-item tre"><img src="./img-decorate/tre.png" alt="" /></div>
+                <div class="img-item hoa"><img src="./img-decorate/hoa.png" alt="" /></div>
+                <div class="img-item hoa2"><img src="./img-decorate/hoa2.png" alt="" /></div>
+                <div class="img-item hoa3"><img src="./img-decorate/hoa3.png" alt="" /></div>
+                <div class="img-item hoa4"><img src="./img-decorate/hoa3.png" alt="" /></div>
+                <div class="img-item banhChung"><img src="./img-decorate/banhChung.png" alt="" /></div>
+                <div class="img-item chen"><img src="./img-decorate/chen.png" alt="" /></div>
+                <div class="img-item vang"><img src="./img-decorate/vang.png" alt="" /></div>
+                <canvas id="canvas"></canvas>
             </div>
-        </div>
 
-        <div id="lixi" class="footer">
-            <div class="footer_wrapper">
-                <div class="footer_box">
-                    <div class="donate">Mình nhận lì xì ở đây nhé</div>
-                    <div class="liXi_qr">
-                        <img src="./img-decorate/lixi_qr.jpg" alt="">
-                    </div>
-                    <span class="lixi_name">Kieu Dinh Hung</span>
-                    <span class="lixi_code">60016122004</span>
+            <div id="letter" class="letter"></div>
+
+            <!-- <div id="slideshow" class="slideshow">
+                <div class="control prev">
+                    <i class="fa-solid fa-chevron-left"></i>
                 </div>
-                <div class="footer_social">
-                    <span class="social_contact">Contact me: </span>
-                    <div class="icon facebook">
-                        <a href="https://www.facebook.com/profile.php?id=61553982164699&mibextid=ZbWKwL"
-                            class="fa-brands fa-facebook-f"></a>
-                        <span class="description">Click</span>
-                    </div>
-                    <div class="icon zalo">
-                        <i class="zalo_icon"> <img src="./img-decorate/zalo.jpg" alt=""> </i>
-                        <span class="description"><img src="./img-decorate/zalo_qr.jpg" alt=""></span>
+                <div class="control next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slideshow-main">
+                        <img src="./BackGround-img/background5.jpg" class="img_feature" alt="" />
                     </div>
 
+                    <div class="slideshow-list_img">
+                        <div class="image_index1 active"><img src="./img-decorate/slideImage.jpg" alt="" /></div>
+                        <div class="image_index2"><img src="./img-decorate/slideImage.jpg" alt="" /></div>
+                        <div class="image_index3"><img src="./img-decorate/slideImage.jpg" alt="" /></div>
+                        <div class="image_index4"><img src="./img-decorate/slideImage.jpg" alt="" /></div>
+                        <div class="image_index5"><img src="./img-decorate/slideImage.jpg" alt="" /></div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div id="lixi" class="footer">
+                <div class="footer_wrapper">
+                    <div class="footer_box">
+                        <div class="donate">Mình nhận lì xì ở đây nhé</div>
+                        <div class="liXi_qr">
+                            <img src="./img-decorate/lixi_qr.jpg" alt="" />
+                        </div>
+                        <span class="lixi_name">Kieu Dinh Hung</span>
+                        <span class="lixi_code">60016122004</span>
+                    </div>
+                    <div class="footer_social">
+                        <span class="social_contact">Contact me: </span>
+                        <div class="icon facebook">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61553982164699&mibextid=ZbWKwL"
+                                class="fa-brands fa-facebook-f"
+                            ></a>
+                            <span class="description">Click</span>
+                        </div>
+                        <div class="icon zalo">
+                            <i class="zalo_icon"> <img src="./img-decorate/zalo.jpg" alt="" /> </i>
+                            <span class="description"><img src="./img-decorate/zalo_qr.jpg" alt="" /></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <audio id="backgroundMusic" class="hide" controls loop>
-        <source src="./music/Nhạc Tết EDM Mix - Mừng Xuân 2021  Nhạc EDM Nhẹ Nhàng Vui Tươi Quẩy Tết Rộn Ràng..mp3"
-            type="audio/mp3">
-    </audio>
-    <audio id="firework_Sound-Effect" class="hide" controls>
-        <source src="./music/fireworkSoundEffect.mp3" type="audio/mp3">
-    </audio>
-</body>
-<script src="./javascript/fireWork.js"></script>
-<script src="./javascript/changeLetters.js"></script>
-<script src="./javascript/changeImage.js"></script>
-<script src="./javascript/events.js"></script>
-
+        <audio id="backgroundMusic" class="hide" controls loop>
+            <source
+                src="./music/Nhạc Tết EDM Mix - Mừng Xuân 2021  Nhạc EDM Nhẹ Nhàng Vui Tươi Quẩy Tết Rộn Ràng..mp3"
+                type="audio/mp3"
+            />
+        </audio>
+        <audio id="firework_Sound-Effect" class="hide" controls>
+            <source src="./music/fireworkSoundEffect.mp3" type="audio/mp3" />
+        </audio>
+    </body>
+    <script src="./javascript/fireWork.js"></script>
+    <script src="./javascript/changeLetters.js"></script>
+    <script src="./javascript/changeImage.js"></script>
+    <script src="./javascript/events.js"></script>
 </html>
